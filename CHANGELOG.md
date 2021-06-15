@@ -1,5 +1,26 @@
 # 0.0.1
 
-  * Includes @component_1@.
-  * Includes @component_2@.
-  * Includes @component_3@.
+- Includes the following Decimal Rules:
+	- `DecimalRangeRule`
+	- `LesserThanDecimalRule`
+	- `GreaterThanDecimalRule`
+	- `LesserThanOrEqualToDecimalRule`
+	- `GreaterThanOrEqualToDecimalRule`
+	- `PositiveDecimalRule`
+- Includes the following Number Rules:
+	- `NumberRangeRule`
+	- `LesserThanNumberRule`
+	- `GreaterThanNumberRule`
+	- `PositiveNumberRule`
+	- `PositiveNumberRangeRule`
+	- `PercentNumberRule`
+	- `EightBitNumberRule`
+	- `ThirtyTwoBitNumberRule`
+- Includes the following Text Rules:
+	- `TextStartsWithRule`
+	- `MatchOnePatternRule`
+	- `EndsWithPatternMatcherRule`
+	- `PatternMatcherRule`
+	- `RegexMatcherRule`
+	- `StartsWithPatternMatcherRule`
+	- `TextStartsWithRule`
