@@ -9,11 +9,15 @@ class LesserThanOrEqualToDecimalRule extends CustomRule<double, double> {
   final fact;
   @override
   get value => fact;
-  final double min;
 
-  const LesserThanOrEqualToDecimalRule(this.fact, this.min);
+  ///
+  /// Maximum number used in the condition.
+  ///
+  final double max;
+
+  const LesserThanOrEqualToDecimalRule(this.fact, this.max);
 
   @override
   @protected
-  isSatisfied(fact) => fact <= min;
+  isSatisfied(fact) => fact <= max;
 }

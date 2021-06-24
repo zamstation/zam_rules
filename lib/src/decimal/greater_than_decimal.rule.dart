@@ -8,6 +8,10 @@ class GreaterThanDecimalRule extends CustomRule<double, double> {
   final fact;
   @override
   get value => fact;
+
+  ///
+  /// Minimum number used in the condition.
+  ///
   final double min;
 
   const GreaterThanDecimalRule(this.fact, this.min);

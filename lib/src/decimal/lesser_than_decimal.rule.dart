@@ -8,11 +8,15 @@ class LesserThanDecimalRule extends CustomRule<double, double> {
   final fact;
   @override
   get value => fact;
-  final double min;
 
-  const LesserThanDecimalRule(this.fact, this.min);
+  ///
+  /// Maximum number used in the condition.
+  ///
+  final double max;
+
+  const LesserThanDecimalRule(this.fact, this.max);
 
   @override
   @protected
-  isSatisfied(fact) => fact < min;
+  isSatisfied(fact) => fact < max;
 }

@@ -8,7 +8,15 @@ class NumberRangeRule<NUM extends num> extends CustomRule<NUM, NUM> {
   final fact;
   @override
   get value => fact;
+
+  ///
+  /// Minimum number of the range.
+  ///
   final NUM min;
+
+  ///
+  /// Maximum number of the range.
+  ///
   final NUM max;
 
   const NumberRangeRule(this.fact, this.min, this.max);

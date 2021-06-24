@@ -8,6 +8,10 @@ class GreaterThanNumberRule<NUM extends num> extends CustomRule<NUM, NUM> {
   final fact;
   @override
   get value => fact;
+
+  ///
+  /// Minimum number used in the condition.
+  ///
   final NUM min;
 
   const GreaterThanNumberRule(this.fact, this.min);

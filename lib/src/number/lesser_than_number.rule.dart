@@ -8,11 +8,15 @@ class LesserThanNumberRule<NUM extends num> extends CustomRule<NUM, NUM> {
   final fact;
   @override
   get value => fact;
-  final NUM min;
 
-  const LesserThanNumberRule(this.fact, this.min);
+  ///
+  /// Maximum number used in the condition.
+  ///
+  final NUM max;
+
+  const LesserThanNumberRule(this.fact, this.max);
 
   @override
   @protected
-  isSatisfied(fact) => fact < min;
+  isSatisfied(fact) => fact < max;
 }

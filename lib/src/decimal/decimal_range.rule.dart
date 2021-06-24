@@ -9,7 +9,15 @@ class DecimalRangeRule extends CustomRule<double, double> {
   @override
   @protected
   get value => fact;
+
+  ///
+  /// Minimum number of the range.
+  ///
   final double min;
+
+  ///
+  /// Maximum number of the range.
+  ///
   final double max;
 
   const DecimalRangeRule(this.fact, this.min, this.max);

@@ -10,6 +10,10 @@ class PositiveNumberRangeRule extends CompositeRule<num, num> {
 
   @override
   final fact;
+
+  ///
+  /// Maximum number of the range.
+  ///
   final num max;
 
   const PositiveNumberRangeRule(this.fact, this.max);
