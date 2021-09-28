@@ -12,18 +12,14 @@ class TextStartsWithRuleTest extends Test<String, bool> {
     return rule.execute().isSuccess;
   }
 
-  get cases => [
-        ValueTestCase(
-          when: 'When valid value is provided',
-          then: 'returns true',
-          input: 'Sony',
-          output: true,
-        ),
-        ValueTestCase(
-          when: 'When invalid value is provided',
-          then: 'returns false',
-          input: 'Samsung',
-          output: false,
-        ),
-      ];
+  final cases = [
+    BooleanTestCase.truthy(
+      when: 'When valid value is provided',
+      input: 'Sony',
+    ),
+    BooleanTestCase.falsy(
+      when: 'When invalid value is provided',
+      input: 'Samsung',
+    ),
+  ];
 }
