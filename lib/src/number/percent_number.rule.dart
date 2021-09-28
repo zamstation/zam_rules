@@ -8,7 +8,7 @@ class PercentNumberRule extends CompositeRule<num, num> {
   static const max = 100;
 
   @override
-  final fact;
+  final num fact;
 
   const PercentNumberRule(this.fact);
 

@@ -6,7 +6,7 @@ import '../_.imports.dart';
 class ListShouldNotBeEmptyRule<T extends Object?>
     extends CustomRule<Iterable<T>, Iterable<T>> {
   @override
-  final fact;
+  final Iterable<T> fact;
   @override
   get value => fact;
 

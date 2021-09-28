@@ -6,7 +6,7 @@ import '../_.imports.dart';
 ///
 class GreaterThanOrEqualToDecimalRule extends CustomRule<double, double> {
   @override
-  final fact;
+  final double fact;
   @override
   get value => fact;
 

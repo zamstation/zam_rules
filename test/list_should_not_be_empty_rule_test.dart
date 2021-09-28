@@ -6,11 +6,13 @@ void main() {
 }
 
 class ListShouldNotBeEmptyRuleTest extends Test<Iterable<int>, bool> {
+  @override
   bool run(Iterable<int> input) {
     final rule = ListShouldNotBeEmptyRule(input);
     return rule.execute().isSuccess;
   }
 
+  @override
   final cases = [
     BooleanTestCase.truthy(
       when: 'When non-empty list is provided',

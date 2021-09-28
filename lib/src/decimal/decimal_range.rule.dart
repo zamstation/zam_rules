@@ -5,7 +5,7 @@ import '../_.imports.dart';
 ///
 class DecimalRangeRule extends CustomRule<double, double> {
   @override
-  final fact;
+  final double fact;
   @override
   @protected
   get value => fact;

@@ -8,7 +8,7 @@ class ThirtyTwoBitNumberRule extends CompositeRule<num, num> {
   static const maxBitLength = 32;
 
   @override
-  final fact;
+  final num fact;
 
   const ThirtyTwoBitNumberRule(this.fact);
 

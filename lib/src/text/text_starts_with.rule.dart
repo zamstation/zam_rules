@@ -6,10 +6,10 @@ import '../_.imports.dart';
 class TextStartsWithRule<VALUE extends Object>
     extends CustomRule<String, VALUE> {
   @override
-  final fact;
+  final String fact;
   @override
   @protected
-  final value;
+  final VALUE value;
   final String pattern;
 
   const TextStartsWithRule(

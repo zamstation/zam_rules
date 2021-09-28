@@ -5,7 +5,7 @@ import '../_.imports.dart';
 ///
 class RegexMatcherRule extends FromValueCustomRule<String, RegExpMatch> {
   @override
-  final fact;
+  final String fact;
   final RegExp regex;
 
   const RegexMatcherRule(this.fact, this.regex);

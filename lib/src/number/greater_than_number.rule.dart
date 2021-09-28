@@ -5,7 +5,7 @@ import '../_.imports.dart';
 ///
 class GreaterThanNumberRule<NUM extends num> extends CustomRule<NUM, NUM> {
   @override
-  final fact;
+  final NUM fact;
   @override
   get value => fact;
 

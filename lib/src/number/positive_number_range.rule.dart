@@ -9,7 +9,7 @@ class PositiveNumberRangeRule extends CompositeRule<num, num> {
   static const min = 0;
 
   @override
-  final fact;
+  final num fact;
 
   ///
   /// Maximum number of the range.

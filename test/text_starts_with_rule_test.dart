@@ -6,12 +6,14 @@ void main() {
 }
 
 class TextStartsWithRuleTest extends Test<String, bool> {
+  @override
   bool run(String input) {
     final text = 'Sony Xperia';
     final rule = TextStartsWithRule(text, input, value: text);
     return rule.execute().isSuccess;
   }
 
+  @override
   final cases = [
     BooleanTestCase.truthy(
       when: 'When valid value is provided',

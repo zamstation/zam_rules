@@ -8,7 +8,7 @@ class PositiveNumberRule extends CompositeRule<num, num> {
   static const min = 0;
 
   @override
-  final fact;
+  final num fact;
 
   const PositiveNumberRule(this.fact);
 

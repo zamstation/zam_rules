@@ -6,7 +6,7 @@ import 'pattern_matcher.rule.dart';
 ///
 class EndsWithPatternMatcherRule extends CompositeRule<String, RegExpMatch> {
   @override
-  final fact;
+  final String fact;
   final String pattern;
 
   const EndsWithPatternMatcherRule(this.fact, this.pattern);

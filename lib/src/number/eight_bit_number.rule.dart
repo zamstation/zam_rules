@@ -8,7 +8,7 @@ class EightBitNumberRule extends CompositeRule<num, num> {
   static const maxBitLength = 8;
 
   @override
-  final fact;
+  final num fact;
 
   const EightBitNumberRule(this.fact);
 
